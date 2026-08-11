@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator — Sonu Yadav</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<div class="calc-bg">
+  <span style="top:6%; left:8%; font-size:7rem; opacity:0.05; transform:rotate(-8deg);">÷</span>
+  <span style="top:12%; left:78%; font-size:4.5rem; opacity:0.06; transform:rotate(10deg);">42</span>
+  <span style="top:22%; left:4%; font-size:3rem; opacity:0.05; transform:rotate(6deg); filter:blur(1px);">π</span>
+  <span style="top:8%; left:45%; font-size:2.4rem; opacity:0.04; transform:rotate(-4deg);">+</span>
+  <span style="top:36%; left:85%; font-size:6rem; opacity:0.05; transform:rotate(-12deg); filter:blur(1.5px);">×</span>
+  <span style="top:48%; left:2%; font-size:5rem; opacity:0.06; transform:rotate(4deg);">7</span>
+  <span style="top:62%; left:88%; font-size:3.2rem; opacity:0.05; transform:rotate(8deg);">=</span>
+  <span style="top:70%; left:6%; font-size:4rem; opacity:0.045; transform:rotate(-6deg); filter:blur(1px);">√</span>
+  <span style="top:80%; left:80%; font-size:5.5rem; opacity:0.06; transform:rotate(-10deg);">9</span>
+  <span style="top:88%; left:12%; font-size:2.6rem; opacity:0.05; transform:rotate(5deg);">100</span>
+  <span style="top:4%; left:65%; font-size:2.2rem; opacity:0.045; transform:rotate(-14deg);">−</span>
+  <span style="top:92%; left:55%; font-size:3.4rem; opacity:0.05; transform:rotate(9deg); filter:blur(1px);">3.14</span>
+  <span style="top:55%; left:50%; font-size:2rem; opacity:0.035; transform:rotate(-5deg);">0.5</span>
+  <span style="top:30%; left:20%; font-size:2.4rem; opacity:0.04; transform:rotate(12deg);">12</span>
+</div>
+
+<div class="calculator">
+  <div class="display">
+    <div class="expression" id="expression">&nbsp;</div>
+    <div class="result" id="result">0</div>
+  </div>
+
+  <div class="keys" id="keys">
+    <button class="key key-fn" data-action="clear">AC</button>
+    <button class="key key-fn" data-action="delete">DEL</button>
+    <button class="key key-fn" data-action="percent">%</button>
+    <button class="key key-op" data-action="operator" data-op="÷">÷</button>
+
+    <button class="key key-num" data-action="number" data-num="7">7</button>
+    <button class="key key-num" data-action="number" data-num="8">8</button>
+    <button class="key key-num" data-action="number" data-num="9">9</button>
+    <button class="key key-op" data-action="operator" data-op="×">×</button>
+
+    <button class="key key-num" data-action="number" data-num="4">4</button>
+    <button class="key key-num" data-action="number" data-num="5">5</button>
+    <button class="key key-num" data-action="number" data-num="6">6</button>
+    <button class="key key-op" data-action="operator" data-op="−">−</button>
+
+    <button class="key key-num" data-action="number" data-num="1">1</button>
+    <button class="key key-num" data-action="number" data-num="2">2</button>
+    <button class="key key-num" data-action="number" data-num="3">3</button>
+    <button class="key key-op" data-action="operator" data-op="+">+</button>
+
+    <button class="key key-num key-zero" data-action="number" data-num="0">0</button>
+    <button class="key key-num" data-action="decimal">.</button>
+    <button class="key key-eq" data-action="equals">=</button>
+  </div>
+
+  <div class="credit">Sonu Yadav · CodSoft Web Dev Task 3</div>
+</div>
+
+<script src="./script.js">
+</script>
+
+</body>
+</html>
